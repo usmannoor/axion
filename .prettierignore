@@ -1,0 +1,7 @@
+node_modules
+coverage
+cache
+.git
+dist
+__MACOSX
+package-lock.json

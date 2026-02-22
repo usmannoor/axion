@@ -17,11 +17,6 @@ module.exports = {
         type: 'string',
         length: {min: 8, max: 100},
     },
-    email: {
-        path: 'email',
-        type: 'string',
-        length: {min:3, max: 100},
-    },
     title: {
         path: 'title',
         type: 'string',
@@ -101,5 +96,31 @@ module.exports = {
     },
     bool: {
         type: 'Boolean',
+    },
+    objectId: {
+        path: 'id',
+        type: 'string',
+        length: { min: 24, max: 24 },
+        regex: /^[a-fA-F0-9]{24}$/,
+    },
+    name: {
+        path: 'name',
+        type: 'string',
+        length: { min: 2, max: 120 },
+    },
+    address: {
+        path: 'address',
+        type: 'string',
+        length: { min: 3, max: 300 },
+    },
+    role: {
+        path: 'role',
+        type: 'string',
+        length: { min: 5, max: 20 },
+        oneOf: ['superadmin', 'school_admin'],
+    },
+    capacity: {
+        path: 'capacity',
+        type: 'number',
     },
 }
