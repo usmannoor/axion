@@ -1,0 +1,33 @@
+{
+  "name": "Local (School API)",
+  "values": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "enabled": true
+    },
+    {
+      "key": "token",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "schoolId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "classroomId",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "studentId",
+      "value": "",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2026-02-22T14:11:36.290021Z",
+  "_postman_exported_using": "ChatGPT"
+}

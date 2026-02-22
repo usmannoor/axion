@@ -238,6 +238,30 @@ Included test cases:
 npm start
 ```
 
+## Postman Collection
+
+To quickly test the API, import these Postman files:
+
+- Collection: `postman/school-api.collection.json`
+- Environment: `postman/school-api.environment.json`
+
+### Import Steps
+1. Open Postman
+2. Click **Import**
+3. Select the collection + environment JSON files above
+4. Select the environment **Local (School API)**
+5. Ensure `baseUrl` is set to your running server (example: `http://localhost:5111`)
+
+### Recommended Run Order
+1. **Auth → Bootstrap Superadmin (one-time)**
+2. **Auth → Login** (auto-saves token)
+3. **Schools → Create School** (auto-saves schoolId)
+4. **Auth → Create School Admin**
+5. Login as School Admin (change credentials in Login request)
+6. **Classrooms → Create Classroom**
+7. **Students → Create Student**
+8. **Students → Transfer Student**
+
 ---
 
 ## Assumptions / Notes
